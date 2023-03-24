@@ -101,8 +101,10 @@ public class ScreenUtils {
     public static void AdjustResolution() throws IOException, TimeoutException {
         if( CURRENT_MODE==MODE.READ){
             if(DeviceUtils.isOkayS4()) {
-                exeCommand("wm size 1404x1872");
-                exeCommand("wm density 300");
+                //exeCommand("wm size 1404x1872");
+                //exeCommand("wm density 300");
+                exeCommand("wm size 960x1280");
+                exeCommand("wm density 205");
             }else if(DeviceUtils.isOkayS4Plus()){
                 exeCommand("wm size 825x1200");
                 exeCommand("wm density 187");

@@ -108,6 +108,7 @@ public class ScreenUtils {
                 exeCommand("wm density 187");
             }
         }else {
+            /*
             if(DeviceUtils.isOkayS4()) {
                 exeCommand("wm size 800x1280");
                 exeCommand("wm density 162");
@@ -115,7 +116,9 @@ public class ScreenUtils {
                 exeCommand("wm size 1200x1900");
                 exeCommand("wm density 187");
             }
-            //exeCommand("wm density reset");
+            */
+            exeCommand("wm size reset");
+            exeCommand("wm density reset");
         }
 
         exeCommand("ro.rotation.external true");

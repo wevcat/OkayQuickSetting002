@@ -104,10 +104,10 @@ public class ScreenUtils {
                 //exeCommand("wm size 1404x1872");
                 //exeCommand("wm density 300");
                 exeCommand("wm size 960x1280");
-                exeCommand("wm density 205");
+                //exeCommand("wm density 205");
             }else if(DeviceUtils.isOkayS4Plus()){
                 exeCommand("wm size 825x1200");
-                exeCommand("wm density 187");
+                //exeCommand("wm density 187");
             }
         }else {
             /*
@@ -119,8 +119,8 @@ public class ScreenUtils {
                 exeCommand("wm density 187");
             }
             */
-            exeCommand("wm size reset");
-            exeCommand("wm density reset");
+            exeCommand("wm size 900x1440");
+            //exeCommand("wm density reset");
         }
 
         exeCommand("ro.rotation.external true");
